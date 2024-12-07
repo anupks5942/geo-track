@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "202296698555",
+    "project_id": "geo-track-ebe40",
+    "storage_bucket": "geo-track-ebe40.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:202296698555:android:a99cf21125a627c552eb9e",
+        "android_client_info": {
+          "package_name": "com.example.geo_track"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDa4jLx_U7Ea1aibcJ29VGx-gDc56dQAAs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

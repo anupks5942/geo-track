@@ -1,0 +1,55 @@
+flutter build apk --analyze-size --target-platform android-arm64
+
+**************************************************
+3. check out popup - if checked out multiple times then what??,
+4. offline map
+**************************************************
+
+
+
+1% = 4.w
+1% = 5.h
+
+animations
+
+name email password dob gender dept post mobile
+
+Lato: shrinked open-sans
+open sans
+poppins: looks stylish
+
+Color.fromARGB(255, 27, 109, 244)
+
+language, theme, 
+
+1. Employee Screens:
+    a. Login Screen
+    b. Home Screen / Dashboard
+        Current status (checked in/out)
+        Quick check-in/out button
+        Today's work duration
+        Map view with office location
+        Option for manual check-in/out
+        Weekly summary of working hours
+    c. Attendance History Screen
+        Calendar view
+        List of check-in/out records
+        Monthly summary
+    d. Profile & Settings Screen
+        Personal information
+        App settings (notifications, permissions)
+
+Manager/Administrator Screens:
+    a. Login Screen (with admin privileges)
+    b. Admin Dashboard
+        Overview of team attendance
+        Employee list with status
+        Quick access to reports
+    c. Employee Management Screen
+        Search and view employee details
+        Edit employee profiles
+        View individual attendance records
+    d. Reports & Settings Screen
+        Generate and view attendance reports
+        Manage office locations
+        System-wide settings
