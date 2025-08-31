@@ -115,7 +115,7 @@ final ThemeData lightTheme = ThemeData(
       ),
     ),
   ),
-  dialogTheme: DialogTheme(
+  dialogTheme: DialogThemeData(
     backgroundColor: Colors.grey[300],
     titleTextStyle: GoogleFonts.sora(
       fontSize: 18.sp,

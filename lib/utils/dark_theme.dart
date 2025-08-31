@@ -119,7 +119,7 @@ final ThemeData darkTheme = ThemeData(
       ),
     ),
   ),
-  dialogTheme: DialogTheme(
+  dialogTheme: DialogThemeData(
     backgroundColor: Colors.grey[900],
     // backgroundColor: const Color(0xFF121B22),
     titleTextStyle: GoogleFonts.sora(
