@@ -61,7 +61,7 @@ class _PermissionScreenState extends State<PermissionScreen>
               //       children: [
               Text(
                 'Permissions',
-                style: GoogleFonts.poppins(
+                style: GoogleFonts.sora(
                   fontSize: 20.sp,
                   // fontSize: width * 0.06,
                   fontWeight: FontWeight.bold,
@@ -71,7 +71,7 @@ class _PermissionScreenState extends State<PermissionScreen>
               // SizedBox(height: height * 0.01),
               Text(
                 "These permissions are required for the app to function properly. Please allow access to continue.",
-                style: GoogleFonts.poppins(
+                style: GoogleFonts.sora(
                   fontSize: 12.sp,
                   // fontSize: width * 0.035,
                   color: Theme.of(context).colorScheme.secondary,
@@ -136,7 +136,7 @@ class _PermissionScreenState extends State<PermissionScreen>
                 child: Center(
                   child: Text(
                     'Continue',
-                    style: GoogleFonts.poppins(
+                    style: GoogleFonts.sora(
                       color: Colors.white,
                       fontSize: 14.sp,
                       fontWeight: FontWeight.w500,

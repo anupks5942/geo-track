@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class PermissionTile extends StatelessWidget {
   final IconData leadingIcon;
@@ -32,13 +33,13 @@ class PermissionTile extends StatelessWidget {
         ),
         title: Text(
           title,
-          style: TextStyle(
+          style: GoogleFonts.sora(
             fontSize: 14.sp,
           ),
         ),
         subtitle: Text(
           subtitle,
-          style: TextStyle(
+          style: GoogleFonts.sora(
             fontSize: 10.sp,
           ),
         ),
@@ -52,9 +53,6 @@ class PermissionTile extends StatelessWidget {
                 onPressed: onPressed,
                 child: Text(
                   actionText,
-                  // style: const TextStyle(
-                  //   backgroundColor: Colors.red,
-                  // ),
                 ),
               ),
       ),

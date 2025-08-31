@@ -19,7 +19,7 @@ class AuthProvider extends AuthDataProvider {
   signUpUsingEmailAndPassword({
     required String name,
     required String email,
-    required String role,
+    // required String role,
     required String password,
     required String dob,
     required String department,
@@ -37,12 +37,12 @@ class AuthProvider extends AuthDataProvider {
         await FirebaseFirestore.instance.collection('users').doc(docName).set({
           'name': name,
           'email': email,
-          'role': role,
+          // 'role': role,
           'dob': dob,
           'dept': department,
           'gender': gender,
           'phone': phone,
-          'timestamp': FieldValue.serverTimestamp(),
+          'createdAt': FieldValue.serverTimestamp(),
         });
       } on FirebaseException catch (e) {
         Utils.alertUser(context, e.toString(), Colors.red);
@@ -69,7 +69,8 @@ class AuthProvider extends AuthDataProvider {
     } on CustomException catch (e) {
       setFree();
       if (e.code == 'user-not-found') {
-        Utils.alertUser(context, "No user found, try signing up instead!", Colors.red);
+        Utils.alertUser(
+            context, "No user found, try signing up instead!", Colors.red);
         return;
       }
       Utils.alertUser(context, e.message, Colors.red);
@@ -80,7 +81,8 @@ class AuthProvider extends AuthDataProvider {
     setBusy();
     try {
       await FirebaseAuth.instance.sendPasswordResetEmail(email: email!);
-      Utils.alertUser(context, 
+      Utils.alertUser(
+        context,
         "Password reset link has been sent to your email. Please check your inbox (or spam folder) to proceed.",
         Colors.green,
       );
@@ -90,14 +92,16 @@ class AuthProvider extends AuthDataProvider {
       setFree();
 
       if (e.code == 'user-not-found') {
-        Utils.alertUser(context, 
+        Utils.alertUser(
+          context,
           "No user found, try signing up instead!",
           Colors.red,
         );
         return;
       }
 
-      Utils.alertUser(context, 
+      Utils.alertUser(
+        context,
         e.message,
         Colors.red,
       );

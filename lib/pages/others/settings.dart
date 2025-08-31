@@ -7,6 +7,7 @@ import 'package:geo_track/utils/custom_exception.dart';
 import 'package:geo_track/utils/utils.dart';
 import 'package:geo_track/widgets/features/settings/settings_tile.dart';
 import 'package:geo_track/pages/features/settings/theme_popup.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'package:provider/provider.dart';
 
@@ -31,7 +32,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
             onPressed: () => Navigator.of(context).pop(false),
             child: Text(
               'Cancel',
-              style: TextStyle(
+              style: GoogleFonts.sora(
                 fontSize: 12.sp,
               ),
             ),
@@ -42,7 +43,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
             onPressed: () => Navigator.of(context).pop(true),
             child: Text(
               'Log out',
-              style: TextStyle(
+              style: GoogleFonts.sora(
                 color: Colors.red,
                 fontSize: 12.sp,
               ),
@@ -80,7 +81,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
           SettingsTile(
             leadingIcon: Icons.brightness_6_outlined,
             title: "Theme",
-            subtitle: themeNotifier.currentTheme.name,
+            subtitle: themeNotifier.themeType.name[0].toUpperCase() +
+                themeNotifier.themeType.name.substring(1),
             onTap: () => ThemePopup().showThemeDialog(context),
           ),
           SettingsTile(

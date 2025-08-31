@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="gcm_defaultSenderId" translatable="false">202296698555</string>
-    <string name="google_api_key" translatable="false">AIzaSyDa4jLx_U7Ea1aibcJ29VGx-gDc56dQAAs</string>
-    <string name="google_app_id" translatable="false">1:202296698555:android:a99cf21125a627c552eb9e</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDa4jLx_U7Ea1aibcJ29VGx-gDc56dQAAs</string>
-    <string name="google_storage_bucket" translatable="false">geo-track-ebe40.firebasestorage.app</string>
-    <string name="project_id" translatable="false">geo-track-ebe40</string>
-</resources>

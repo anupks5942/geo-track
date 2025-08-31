@@ -29,7 +29,7 @@ class _SignUpViewState extends State<SignUpView> {
   late String _department;
   late String _phoneNumber;
   late String _gender;
-  late String _role;
+  // late String _role;
 
   DateTime? _selectedDate;
 
@@ -56,7 +56,7 @@ class _SignUpViewState extends State<SignUpView> {
 
     context.read<AuthProvider>().signUpUsingEmailAndPassword(
           name: _name,
-          role: _role,
+          // role: _role,
           email: _email,
           password: _password,
           department: _department,
@@ -75,7 +75,7 @@ class _SignUpViewState extends State<SignUpView> {
       child: Column(
         children: [
           TextFormField(
-            style: GoogleFonts.poppins(
+            style: GoogleFonts.sora(
               fontSize: 12.sp,
               fontWeight: FontWeight.w500,
             ),
@@ -91,7 +91,7 @@ class _SignUpViewState extends State<SignUpView> {
           ),
           SizedBox(height: 5.h),
           TextFormField(
-            style: GoogleFonts.poppins(
+            style: GoogleFonts.sora(
               fontSize: 12.sp,
               fontWeight: FontWeight.w500,
             ),
@@ -111,23 +111,23 @@ class _SignUpViewState extends State<SignUpView> {
             ),
           ),
           SizedBox(height: 5.h),
-          DropdownMenu(
-            width: double.infinity,
-            enableSearch: false,
-            hintText: 'Role',
-            onSelected: (value) {
-              if (value != null) {
-                setState(() {
-                  _role = value;
-                });
-              }
-            },
-            dropdownMenuEntries: const [
-              DropdownMenuEntry(value: 'Admin', label: 'Administrator'),
-              DropdownMenuEntry(value: 'Employee', label: 'Employee'),
-            ],
-          ),
-          SizedBox(height: 5.h),
+          // DropdownMenu(
+          //   width: double.infinity,
+          //   enableSearch: false,
+          //   hintText: 'Role',
+          //   onSelected: (value) {
+          //     if (value != null) {
+          //       setState(() {
+          //         _role = value;
+          //       });
+          //     }
+          //   },
+          //   dropdownMenuEntries: const [
+          //     DropdownMenuEntry(value: 'Admin', label: 'Administrator'),
+          //     DropdownMenuEntry(value: 'Employee', label: 'Employee'),
+          //   ],
+          // ),
+          // SizedBox(height: 5.h),
           DropdownMenu(
             width: double.infinity,
             enableSearch: false,
@@ -169,7 +169,7 @@ class _SignUpViewState extends State<SignUpView> {
           ),
           SizedBox(height: 5.h),
           TextFormField(
-            style: GoogleFonts.poppins(
+            style: GoogleFonts.sora(
               fontSize: 12.sp,
               fontWeight: FontWeight.w500,
             ),
@@ -200,7 +200,7 @@ class _SignUpViewState extends State<SignUpView> {
           SizedBox(height: 5.h),
           TextFormField(
             controller: _emailController,
-            style: GoogleFonts.poppins(
+            style: GoogleFonts.sora(
               fontSize: 12.sp,
               fontWeight: FontWeight.w500,
             ),
@@ -217,7 +217,7 @@ class _SignUpViewState extends State<SignUpView> {
           SizedBox(height: 5.h),
           TextFormField(
             controller: _passwordController,
-            style: GoogleFonts.poppins(
+            style: GoogleFonts.sora(
               fontSize: 12.sp,
               fontWeight: FontWeight.w500,
             ),
@@ -256,7 +256,7 @@ class _SignUpViewState extends State<SignUpView> {
           SizedBox(height: 15.h),
           Text(
             "Already have an account?",
-            style: GoogleFonts.poppins(
+            style: GoogleFonts.sora(
               fontSize: 11.sp,
             ),
           ),
@@ -276,7 +276,7 @@ class _SignUpViewState extends State<SignUpView> {
               child: Center(
                 child: Text(
                   "Log in",
-                  style: GoogleFonts.poppins(
+                  style: GoogleFonts.sora(
                     color: Theme.of(context).brightness == Brightness.dark
                         ? Colors.white
                         : Colors.black,

@@ -46,7 +46,7 @@ class Utils {
       builder: (context) => AlertDialog(
         content: Text(
           message,
-          style: GoogleFonts.poppins(fontSize: 12.sp, color: color),
+          style: GoogleFonts.sora(fontSize: 12.sp, color: color),
         ),
         actions: [
           TextButton(
@@ -58,7 +58,7 @@ class Utils {
             },
             child: Text(
               'Ok',
-              style: TextStyle(
+              style: GoogleFonts.sora(
                 fontSize: 12.sp,
                 fontWeight: FontWeight.bold,
               ),

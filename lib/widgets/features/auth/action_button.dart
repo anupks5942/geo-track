@@ -41,7 +41,7 @@ class ActionButton extends StatelessWidget {
               )
             : Text(
                 text,
-                style: GoogleFonts.poppins(
+                style: GoogleFonts.sora(
                   color: Colors.white,
                   fontWeight: FontWeight.w500,
                   fontSize: 13.sp,

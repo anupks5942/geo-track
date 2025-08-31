@@ -56,7 +56,7 @@ class _LogInViewState extends State<LogInView> {
         children: [
           TextFormField(
             controller: _emailController,
-            style: GoogleFonts.poppins(
+            style: GoogleFonts.sora(
               fontSize: 12.sp,
               fontWeight: FontWeight.w500,
             ),
@@ -76,7 +76,7 @@ class _LogInViewState extends State<LogInView> {
           SizedBox(height: 5.h),
           TextFormField(
             controller: _passwordController,
-            style: GoogleFonts.poppins(
+            style: GoogleFonts.sora(
               fontSize: 12.sp,
               fontWeight: FontWeight.w500,
             ),
@@ -116,7 +116,7 @@ class _LogInViewState extends State<LogInView> {
                 ),
                 child: Text(
                   "Forgot password?",
-                  style: GoogleFonts.poppins(
+                  style: GoogleFonts.sora(
                     color: Colors.blue,
                     fontSize: 11.sp,
                     // fontWeight: FontWeight.w600,
@@ -138,7 +138,7 @@ class _LogInViewState extends State<LogInView> {
           SizedBox(height: 15.h),
           Text(
             "Don't have an account?",
-            style: GoogleFonts.poppins(
+            style: GoogleFonts.sora(
               fontSize: 11.sp,
             ),
           ),
@@ -159,7 +159,7 @@ class _LogInViewState extends State<LogInView> {
               child: Center(
                 child: Text(
                   "Sign up",
-                  style: GoogleFonts.poppins(
+                  style: GoogleFonts.sora(
                     color: Theme.of(context).brightness == Brightness.dark
                         ? Colors.white
                         : Colors.black,

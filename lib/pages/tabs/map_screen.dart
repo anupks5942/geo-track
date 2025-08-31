@@ -130,7 +130,7 @@ class _MapScreenState extends State<MapScreen> {
             onPressed: () {
               Navigator.of(context).push(
                 AnimatedNavigation()
-                    .rightToLeftTransition(const AnalyticsScreen()),
+                    .rightToLeftTransition(const DashboardScreen()),
               );
             },
             tooltip: 'Dashboard',
@@ -220,10 +220,10 @@ class _MapScreenState extends State<MapScreen> {
                       BoxShadow(
                         color: Theme.of(context).brightness == Brightness.light
                             ? Colors.grey[500]!
-                            : Colors.black, // 500,black
-                        offset: const Offset(3, 3), // 5,5
+                            : Colors.black,
+                        offset: const Offset(3, 3),
                         blurRadius: 10,
-                        spreadRadius: 1, // 5
+                        spreadRadius: 1,
                       ),
                     ],
                   ),
@@ -232,7 +232,6 @@ class _MapScreenState extends State<MapScreen> {
                     horizontal: 8.w,
                   ),
                   child: Column(
-                    // crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Column(
@@ -244,13 +243,13 @@ class _MapScreenState extends State<MapScreen> {
                               children: [
                                 TextSpan(
                                   text: 'GAIL Office, Bhopal',
-                                  style: GoogleFonts.poppins(
+                                  style: GoogleFonts.sora(
                                     fontWeight: FontWeight.normal,
                                   ),
                                 ),
                               ],
                             ),
-                            style: GoogleFonts.poppins(
+                            style: GoogleFonts.sora(
                               fontSize: 12.sp,
                               fontWeight: FontWeight.w600,
                             ),
@@ -262,33 +261,42 @@ class _MapScreenState extends State<MapScreen> {
                                 geofenceWatch.isInsideGeofence
                                     ? TextSpan(
                                         text: "Checked In",
-                                        style: GoogleFonts.poppins(
+                                        style: GoogleFonts.sora(
                                             color: Colors.green,
                                             fontWeight: FontWeight.normal))
                                     : TextSpan(
                                         text: "Checked Out",
-                                        style: GoogleFonts.poppins(
+                                        style: GoogleFonts.sora(
                                             color: Colors.redAccent,
                                             fontWeight: FontWeight.normal)),
                               ],
                             ),
-                            style: GoogleFonts.poppins(
+                            style: GoogleFonts.sora(
                               fontSize: 12.sp,
                               fontWeight: FontWeight.w600,
                             ),
                           ),
                         ],
                       ),
-                      SizedBox(
-                        height: 5.h,
-                        // height: height * 0.01,
-                      ),
+                      SizedBox(height: 5.h),
                       Tooltip(
-                        message: "Quick Check-out",
+                        message: geofenceWatch.isInsideGeofence
+                            ? "Quick Check-out"
+                            : "Firstly Check-in",
                         child: TextButton(
-                          onPressed: () => showCheckOutDialog(context),
-                          child: const Text(
+                          onPressed: geofenceWatch.isInsideGeofence
+                              ? () => showCheckOutDialog(context)
+                              : null,
+                          style: TextButton.styleFrom(
+                            disabledForegroundColor: Colors.grey,
+                          ),
+                          child: Text(
                             'Check Out',
+                            style: GoogleFonts.sora(
+                              color: geofenceWatch.isInsideGeofence
+                                  ? null
+                                  : Colors.grey,
+                            ),
                           ),
                         ),
                       ),

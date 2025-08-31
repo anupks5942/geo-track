@@ -52,7 +52,7 @@ class _ForgotPassScreenState extends State<ForgotPassScreen> {
               children: [
                 Text(
                   "Forgot Password",
-                  style: GoogleFonts.poppins(
+                  style: GoogleFonts.sora(
                     fontSize: 20.sp,
                     fontWeight: FontWeight.bold,
                   ),
@@ -62,7 +62,7 @@ class _ForgotPassScreenState extends State<ForgotPassScreen> {
                 ),
                 Text(
                   "We'll send you an email with a link to reset your password if it matches an existing account.",
-                  style: GoogleFonts.poppins(
+                  style: GoogleFonts.sora(
                     fontSize: 12.sp,
                   ),
                 ),
@@ -73,7 +73,7 @@ class _ForgotPassScreenState extends State<ForgotPassScreen> {
                   key: _formKey,
                   // autovalidateMode: AutovalidateMode.onUserInteraction,
                   child: TextFormField(
-                    style: GoogleFonts.poppins(
+                    style: GoogleFonts.sora(
                       fontSize: 12.sp,
                       fontWeight: FontWeight.w500,
                     ),

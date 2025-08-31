@@ -19,7 +19,7 @@ class Toasts {
             ),
             title: Text(
               title, /////////////////////////////////////
-              style: GoogleFonts.poppins(
+              style: GoogleFonts.sora(
                 fontSize: 12.sp,
                 // fontSize: width * 0.035,
                 // fontWeight: FontWeight.w700,
@@ -45,7 +45,7 @@ class Toasts {
                 ),
                 title: Text(
                   title, ////////////////////////
-                  style: GoogleFonts.poppins(
+                  style: GoogleFonts.sora(
                     fontSize: 12.sp,
                     // fontWeight: FontWeight.w700,
                   ),

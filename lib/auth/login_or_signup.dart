@@ -26,7 +26,7 @@ class LogInOrSignUp extends StatelessWidget {
                   context.watch<AuthProvider>().hasSelectedSignUpView
                       ? "Sign up"
                       : "Log in",
-                  style: GoogleFonts.poppins(
+                  style: GoogleFonts.sora(
                     fontSize: 20.sp,
                     fontWeight: FontWeight.bold,
                   ),

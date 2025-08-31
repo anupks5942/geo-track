@@ -32,14 +32,14 @@ class InfoTile extends StatelessWidget {
             children: [
               Text(
                 label,
-                style: GoogleFonts.poppins(
+                style: GoogleFonts.sora(
                   color: Theme.of(context).colorScheme.secondary,
                   fontSize: 10.sp,
                 ),
               ),
               Text(
                 value,
-                style: GoogleFonts.poppins(
+                style: GoogleFonts.sora(
                   fontSize: 12.sp,
                 ),
               ),

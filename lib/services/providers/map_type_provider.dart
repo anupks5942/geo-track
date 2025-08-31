@@ -92,7 +92,7 @@ class MapTypeProvider with ChangeNotifier, WidgetsBindingObserver {
                       children: [
                         Text(
                           "Map type",
-                          style: GoogleFonts.poppins(
+                          style: GoogleFonts.sora(
                             fontSize: 14.sp,
                             // fontSize: width * 0.035,
                             fontWeight: FontWeight.w500,
@@ -179,7 +179,7 @@ class MapTypeProvider with ChangeNotifier, WidgetsBindingObserver {
               ),
               Text(
                 label,
-                style: GoogleFonts.poppins(
+                style: GoogleFonts.sora(
                   fontSize: 10.sp,
                   // fontSize: width * 0.03,
                 ),

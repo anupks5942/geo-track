@@ -58,7 +58,7 @@ class NeumorphismCard extends StatelessWidget {
               Text(
                 title,
                 textAlign: TextAlign.center,
-                style: GoogleFonts.poppins(
+                style: GoogleFonts.sora(
                   fontSize: 16.sp,
                 ),
               ),

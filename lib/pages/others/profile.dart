@@ -59,16 +59,16 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   label: 'Name',
                   value: userData?['name'] ?? 'null',
                 ),
-                InfoTile(
-                  leadingIcon: Icons.badge_outlined,
-                  label: 'User ID',
-                  value: userData?['email']?.split('@')[0] ?? 'null',
-                ),
-                InfoTile(
-                  leadingIcon: Icons.work_outline,
-                  label: 'Role',
-                  value: userData?['role'] ?? 'null',
-                ),
+                // InfoTile(
+                //   leadingIcon: Icons.badge_outlined,
+                //   label: 'User ID',
+                //   value: userData?['email']?.split('@')[0] ?? 'null',
+                // ),
+                // InfoTile(
+                //   leadingIcon: Icons.work_outline,
+                //   label: 'Role',
+                //   value: userData?['role'] ?? 'null',
+                // ),
                 InfoTile(
                   leadingIcon: Icons.groups,
                   label: 'Department',

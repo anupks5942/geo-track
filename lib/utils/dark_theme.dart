@@ -20,14 +20,14 @@ final ThemeData darkTheme = ThemeData(
   appBarTheme: AppBarTheme(
     backgroundColor: Colors.transparent,
     iconTheme: const IconThemeData(color: Colors.white),
-    titleTextStyle: GoogleFonts.poppins(
+    titleTextStyle: GoogleFonts.sora(
       color: Colors.white,
       fontSize: 17.sp,
       // fontWeight: FontWeight.w600,
     ),
   ),
   dropdownMenuTheme: DropdownMenuThemeData(
-    textStyle: GoogleFonts.poppins(
+    textStyle: GoogleFonts.sora(
       fontSize: 12.sp,
       fontWeight: FontWeight.w500,
     ),
@@ -48,7 +48,7 @@ final ThemeData darkTheme = ThemeData(
         color: Colors.white,
       ),
     ),
-    hintStyle: GoogleFonts.poppins(
+    hintStyle: GoogleFonts.sora(
       fontSize: 12.sp,
       color: Colors.grey[400],
     ),
@@ -59,12 +59,12 @@ final ThemeData darkTheme = ThemeData(
   ),
   listTileTheme: ListTileThemeData(
     iconColor: Colors.grey,
-    titleTextStyle: GoogleFonts.poppins(
+    titleTextStyle: GoogleFonts.sora(
       color: Colors.white,
       fontSize: 12.sp,
       fontWeight: FontWeight.w500,
     ),
-    subtitleTextStyle: GoogleFonts.poppins(
+    subtitleTextStyle: GoogleFonts.sora(
       fontSize: 10.sp,
       color: Colors.grey,
     ),
@@ -86,7 +86,7 @@ final ThemeData darkTheme = ThemeData(
         ),
       ),
       textStyle: WidgetStateProperty.all(
-        GoogleFonts.poppins(
+        GoogleFonts.sora(
           // color: Colors.white,
           fontSize: 11.sp,
         ),
@@ -98,7 +98,7 @@ final ThemeData darkTheme = ThemeData(
     backgroundColor: Colors.grey[900],
     // backgroundColor: const Color(0xFF121B22),
     closeIconColor: Colors.white,
-    contentTextStyle: GoogleFonts.poppins(
+    contentTextStyle: GoogleFonts.sora(
       color: Colors.white,
       fontSize: 12.sp,
     ),
@@ -108,12 +108,12 @@ final ThemeData darkTheme = ThemeData(
         // Color(0xFF121B22),
         ),
     textStyle: WidgetStatePropertyAll(
-      GoogleFonts.poppins(
+      GoogleFonts.sora(
         fontSize: 12.sp,
       ),
     ),
     hintStyle: WidgetStatePropertyAll(
-      GoogleFonts.poppins(
+      GoogleFonts.sora(
         fontSize: 12.sp,
         color: Colors.grey[300],
       ),
@@ -122,11 +122,11 @@ final ThemeData darkTheme = ThemeData(
   dialogTheme: DialogTheme(
     backgroundColor: Colors.grey[900],
     // backgroundColor: const Color(0xFF121B22),
-    titleTextStyle: GoogleFonts.poppins(
+    titleTextStyle: GoogleFonts.sora(
       fontSize: 18.sp,
       fontWeight: FontWeight.w500,
     ),
-    contentTextStyle: GoogleFonts.poppins(
+    contentTextStyle: GoogleFonts.sora(
       color: Colors.white,
       fontSize: 12.sp,
     ),
